@@ -13,13 +13,8 @@ X = np.zeros([N,K]) # 行列Xの初期化
 この部分は自力で完成してください。
 ヒント：行列Xの要素X(n,k)の一般的表現をよく観察すること
 
+
 '''
 
-for n in range(N):
-    for k in range(K):
-        if n - k >= 0:  
-            X[n, k] = x[n - k, 0] 
-
 y = np.matmul(X,h) # 行列の乗算で畳み込み演算
-
 print("\ny=\n",y)
